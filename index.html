@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Trang chủ</title>
+<link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" />
+</head>
+<body>
+	<h1>Alpine Linux hardening</h1>
+	<p>This is my personal project to keep my Alpine Linux secure :)</p>
+	<p>Works done by other projects, like Whonix will be bring here. I haven't manage to develop my own security hardening. Really busy, really hate to look at the computer's screen.</p>
+	<p>Help me with crediting+licensing and developing by joining the project. I would give you many control</p>
+	<h2>Some security advantages:</h2>
+	<p><b>Minimized attack surface</b></p>
+	<ul>
+		<li>musl libc or muslc: Cleaner codebase, less bloated than glibc, <a href="https://www.dustri.org/b/security-features-of-musl.html">decent exploit mitigations</a>, <a href="https://www.openwall.com/lists/musl/2020/05/13/1">more secure mallocng</a>.</li>
+		<li>busybox: lightweight, less attack surface, the code is still bad (at least busybox is better than coreutils)</li>
+		<li>Based on minimalism, packages are splitted, you only install anything you need</li>
+	</ul>
+	<p>Compile packages with PIE and Stack-smashing protection</p>
+	<ul>
+		<li>Many distros do the same but maybe they are proud that they are one of the really early adopters</li>
+	</ul>
+</body>
+</html>
